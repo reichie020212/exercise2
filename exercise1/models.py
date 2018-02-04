@@ -27,7 +27,7 @@ class ValidWord(models.Model):
 			if match:
 				#self.listword =  json.dumps(valid_word.replace("\n", ""))
 				mywords.append(valid_word.replace("\n", ""))
-		self.listword = '\n'.join(mywords)	
+		self.listword = ',\n'.join(mywords)	
 		print self.listword
 		valid_words.close()
 
